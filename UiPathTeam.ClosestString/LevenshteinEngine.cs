@@ -6,21 +6,19 @@ using System.Threading.Tasks;
 
 namespace UiPathTeam.ClosestString
 {
-    public class Levenshtein
+    public class LevenshteinEngine : IDistanceEngine
     {
         // TODO: CONTRACT - make inheirited class.
-        private readonly string storedValue;
-        private readonly int[] costs;
+        private string storedValue;
+        private int[] costs;
 
         /// <summary>
         /// Creates a new instance with base string value
         /// </summary>
         /// <param Name="value">Base string value.</param>
-        public Levenshtein(string value)
+        public LevenshteinEngine(string baseString)
         {
-            this.storedValue = value;
-            // Create matrix row
-            this.costs = new int[this.storedValue.Length];
+            SetBaseString(baseString);
         }
 
         /// <summary>
@@ -85,6 +83,17 @@ namespace UiPathTeam.ClosestString
                 }
             }
             return this.costs[this.costs.Length - 1];
+        }
+
+        /// <summary>
+        /// Sets the base string to the given value
+        /// </summary>
+        /// <param name="baseString"></param>
+        public void SetBaseString(string baseString)
+        {
+            this.storedValue = baseString;
+            // Create matrix row
+            this.costs = new int[this.storedValue.Length];
         }
     }
 }

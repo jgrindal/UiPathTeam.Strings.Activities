@@ -5,8 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Activities;
 using System.ComponentModel;
+using UiPathTeam.StringActivities.StringDistanceEngines;
 
-namespace UiPathTeam.ClosestString
+namespace UiPathTeam.StringActivities.ClosestString
 {
     public class ClosestString : NativeActivity
     {
@@ -34,7 +35,7 @@ namespace UiPathTeam.ClosestString
         /// <param name="context"></param>
         protected override void Execute(NativeActivityContext context)
         {
-            Levenshtein comparison = new Levenshtein(BaseString.Get(context));
+            LevenshteinEngine comparison = new LevenshteinEngine(BaseString.Get(context));
 
             foreach(String possible in Possibles.Get(context))
             {

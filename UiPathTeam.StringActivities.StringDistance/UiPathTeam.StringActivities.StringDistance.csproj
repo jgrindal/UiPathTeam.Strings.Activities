@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F40A62A6-FBAA-4D75-94CE-830DC3118614}</ProjectGuid>
+    <ProjectGuid>{1E01A1E8-A203-4382-91E8-48C9ABFCCF4D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UiPathTeam.ClosestString</RootNamespace>
-    <AssemblyName>UiPathTeam.ClosestString</AssemblyName>
+    <RootNamespace>UiPathTeam.StringActivities.StringDistance</RootNamespace>
+    <AssemblyName>UiPathTeam.StringActivities.StringDistance</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,12 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Levenshetin.cs" />
-    <Compile Include="ClosestString.cs" />
+    <Compile Include="StringDistance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
+    <ProjectReference Include="..\StringDistanceAlgos\StringDistanceEngines.csproj">
+      <Project>{eb2f2525-869f-4216-ba3c-77b65a4547ae}</Project>
+      <Name>StringDistanceEngines</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
