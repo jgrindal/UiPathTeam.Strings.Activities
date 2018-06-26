@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Activities;
 using System.ComponentModel;
-using UiPathTeam.StringActivities.StringDistanceEngines;
+using UiPathTeam.Strings.StringDistanceEngines;
 
-namespace UiPathTeam.StringActivities.StringDistance
+namespace UiPathTeam.Strings.StringDistance
 {
     public class StringDistance : CodeActivity
     {

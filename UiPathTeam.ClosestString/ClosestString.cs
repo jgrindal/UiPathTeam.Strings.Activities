@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Activities;
 using System.ComponentModel;
-using UiPathTeam.StringActivities.StringDistanceEngines;
+using UiPathTeam.Strings.StringDistanceEngines;
 
-namespace UiPathTeam.StringActivities.ClosestString
+namespace UiPathTeam.Strings.ClosestString
 {
     public class ClosestString : NativeActivity
     {
@@ -35,16 +35,19 @@ namespace UiPathTeam.StringActivities.ClosestString
         /// <param name="context"></param>
         protected override void Execute(NativeActivityContext context)
         {
-            LevenshteinEngine comparison = new LevenshteinEngine(BaseString.Get(context));
+            LevenshteinEngine engine = new LevenshteinEngine(BaseString.Get(context));
+            Boolean first = true;
 
             foreach(String possible in Possibles.Get(context))
             {
-                int currentDistance = comparison.Distance(possible);
-                if(currentDistance < Distance.Get(context))
+                int currentDistance = engine.Distance(possible);
+
+                if (currentDistance < Distance.Get(context) || first)
                 {
                     Distance.Set(context, currentDistance);
                     SelectedString.Set(context, possible);
                 }
+                first = false;
             }
         }
     }

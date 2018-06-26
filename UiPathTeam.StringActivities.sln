@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UiPathTeam.StringActivities.ClosestString", "UiPathTeam.ClosestString\UiPathTeam.StringActivities.ClosestString.csproj", "{F40A62A6-FBAA-4D75-94CE-830DC3118614}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UiPathTeam.Strings.ClosestString", "UiPathTeam.ClosestString\UiPathTeam.Strings.ClosestString.csproj", "{F40A62A6-FBAA-4D75-94CE-830DC3118614}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UiPathTeam.StringActivities.StringDistance", "UiPathTeam.StringActivities.StringDistance\UiPathTeam.StringActivities.StringDistance.csproj", "{1E01A1E8-A203-4382-91E8-48C9ABFCCF4D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UiPathTeam.Strings.StringDistance", "UiPathTeam.StringActivities.StringDistance\UiPathTeam.Strings.StringDistance.csproj", "{1E01A1E8-A203-4382-91E8-48C9ABFCCF4D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringDistanceEngines", "StringDistanceAlgos\StringDistanceEngines.csproj", "{EB2F2525-869F-4216-BA3C-77B65A4547AE}"
 EndProject

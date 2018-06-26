@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("UiPathTeam.StringActivities.StringDistance")]
+[assembly: AssemblyTitle("UiPathTeam.Strings.StringDistance")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("UiPathTeam.StringActivities.StringDistance")]
+[assembly: AssemblyProduct("UiPathTeam.Strings.StringDistance")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
